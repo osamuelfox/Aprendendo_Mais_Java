@@ -17,8 +17,5 @@ public class OperadoresLogicos {
         }
         System.out.println("Fim");
 
-
-
-
     }
 }
