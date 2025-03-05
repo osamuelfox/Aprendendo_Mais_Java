@@ -75,6 +75,43 @@ A linguagem Java possui 52 palavras reservadas. Todas essas palavras são classi
 ## Palavras Reservadas Não Utilizadas
 
 - **const**: Não utilize para declarar constantes; use public static final
+
+- # Escopo de Uso
+
+## Uso de Palavras Reservadas
+
+### Arquivo
+- **Palavras**: `package`, `import`, `static`
+- **Observação**: Essas palavras são usadas no nível de arquivo para definir pacotes, importar classes e definir membros estáticos.
+
+### Classe
+- **Palavras**: `public` ou `protected` ou `private` + `final` ou `abstract` + `extends` ou `implements`
+- **Observação**: 
+  - `private` (em caso de classe interna), `final` ou `abstract` também podem ser usados.
+  - Define a visibilidade, modificadores e herança de uma classe.
+
+### Método
+- **Palavras**: `public` ou `protected` ou `private` + `static` ou `final` ou `abstract` + `void` e `return`
+- **Observação**: 
+  - `void` é usado quando o método não tem retorno.
+  - `return` é usado quando o método retorna um valor.
+
+### Atributo
+- **Palavras**: `public` ou `protected` ou `private` + `static` ou `final` + tipo primitivo
+- **Observação**: Define a visibilidade, modificadores e tipo de um atributo.
+
+---
+
+# Palavras "Opostas"
+
+Assim como nas classificações gramaticais da língua portuguesa, existem algumas palavras que são completamente opostas (antônimas) na linguagem Java, conforme a tabela abaixo:
+
+| **Palavra**   | **Palavra**   | **Explicação**                                                                 |
+|---------------|---------------|--------------------------------------------------------------------------------|
+| `package`     | `import`      | Enquanto `package` determina o diretório real da classe, o `import` informa de onde será importada a classe. Isso porque podemos ter classes de mesmo nome. |
+| `extends`     | `implements`  | Enquanto `extends` determina que uma classe estende outra classe, `implements` determina que uma classe implementa uma interface, porém nunca o contrário. |
+| `final`       | `abstract`    | Enquanto `final` determina fim de alteração de valor ou lógica comportamental, `abstract` em métodos exige que sub-classes precisarão definir comportamento de um método abstrato. **NOTA**: Se uma classe contém um único método abstrato, toda classe precisa ser abstrata. |
+| `throws`      | `throw`       | Esta é uma das situações mais complicadas de compreensão destas duas palavras. Enquanto a `throws` determina que um método pode lançar uma exceção, `throw` é a implementação que dispara a exceção. **Vamos conhecer mais sobre este conceito no assunto Exceções.** |
 - **goto**: não implementada na linguagem Java por ser considerada prejudicial
 
 ## Literais Reservados
