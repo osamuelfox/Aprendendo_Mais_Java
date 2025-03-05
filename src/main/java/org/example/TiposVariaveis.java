@@ -27,7 +27,6 @@ public class TiposVariaveis{
         numero ++; //Valor de atribuicao //6
         numero --; //Valor de deducao //5
 
-
         boolean variavel = true;
         variavel = !variavel; //invertendo a variavel boolean //false
 
