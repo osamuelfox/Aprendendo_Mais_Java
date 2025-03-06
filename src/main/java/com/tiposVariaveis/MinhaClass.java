@@ -1,4 +1,4 @@
-package org.example;
+package com.tiposVariaveis;
 
 public class MinhaClass {
     public static void main(String[] args) {
